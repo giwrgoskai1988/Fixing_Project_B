@@ -52,15 +52,11 @@ namespace George_Nikolakeas_PROJECT_B.Entities
             Subject = Helper.StringInput();
         }
 
-        private bool TrainerExists(MegaHard cd)
-        {
-            bool b = cd.Trainers.Any(t => t.FirstName == FirstName && t.LastName == LastName && t.Subject == Subject);
-            return b;
-        }
 
         public void AddTrainerToCourse(Trainer tr, MegaHard cd)
         {
-            if (!TrainerExists(cd))
+            bool b = cd.Trainers.Any(t => t.FirstName == FirstName && t.LastName == LastName && t.Subject == Subject);
+            if (!b)
             {
                 try
                 {

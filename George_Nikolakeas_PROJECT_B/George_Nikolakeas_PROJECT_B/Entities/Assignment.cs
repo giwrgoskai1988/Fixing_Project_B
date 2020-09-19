@@ -63,16 +63,12 @@ namespace George_Nikolakeas_PROJECT_B.Entities
             TotalMark = Helper.TotalMark(OralMark);
         }
 
-        private bool AssExists(MegaHard cd)
-        {
-            bool b = cd.Assignments.Any(a => a.Title == Title && a.Description == Description && a.SubDateTime == SubDateTime && a.OralMark == OralMark && a.TotalMark == TotalMark);
-            return b;
-        }
-
 
         public void AddAssToCourse(Assignment ass, MegaHard cd)
         {
-            if (!AssExists(cd))
+            bool b = cd.Assignments.Any(a => a.Title == Title && a.Description == Description && a.SubDateTime == SubDateTime && a.OralMark == OralMark && a.TotalMark == TotalMark);
+
+            if (!b)
             {
                 try
                 {

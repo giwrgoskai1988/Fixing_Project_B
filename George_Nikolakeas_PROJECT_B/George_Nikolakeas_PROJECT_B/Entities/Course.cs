@@ -84,15 +84,11 @@ namespace George_Nikolakeas_PROJECT_B.Entities
             }
         }
 
-        private bool CourseExists(MegaHard cd)
-        {
-            bool b = cd.Courses.Any(c => c.Title == Title && c.Stream == Stream && c.Type == Type && c.Start_date == Start_date && c.End_date == End_date);
-            return b;
-        }
-
         public void AddCourseToList(Course a, MegaHard cd)
         {
-            if (!CourseExists(cd))
+            bool b = cd.Courses.Any(c => c.Title == Title && c.Stream == Stream && c.Type == Type && c.Start_date == Start_date && c.End_date == End_date);
+
+            if (!b)
             {
                 try
                 {

@@ -60,15 +60,12 @@ namespace George_Nikolakeas_PROJECT_B.Entities
             TuitionFee = Helper.TuitFee();
         }
 
-        private bool StudentExists(MegaHard cd)
-        {
-            bool b = cd.Students.Any(s => s.FirstName == FirstName && s.LastName == LastName && s.DateOfBirth == DateOfBirth);
-            return b;
-        }
 
         public void AddStudentToCourse(Student st, MegaHard cd)
         {
-            if (!StudentExists(cd))
+            bool b = cd.Students.Any(s => s.FirstName == FirstName && s.LastName == LastName && s.DateOfBirth == DateOfBirth);
+
+            if (!b)
             {
                 try
                 {
