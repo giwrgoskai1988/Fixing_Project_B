@@ -1,0 +1,12 @@
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\George_Nikolakeas_PROJECT_B.exe.config
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\George_Nikolakeas_PROJECT_B.exe
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\George_Nikolakeas_PROJECT_B.pdb
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\EntityFramework.dll
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\EntityFramework.xml
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.csprojAssemblyReference.cache
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.csproj.CoreCompileInputs.cache
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.csproj.CopyComplete
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.exe
+C:\Users\Toumpano\source\repos\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.pdb
