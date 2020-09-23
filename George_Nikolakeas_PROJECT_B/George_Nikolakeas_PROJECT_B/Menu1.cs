@@ -33,21 +33,20 @@ namespace George_Nikolakeas_PROJECT_B
 
             while (input != 5)
             {
-                if (input == 1)
+                switch(input)
                 {
-                    Helper.CreateCourse(cd);
-                }
-                else if (input == 2)
-                {
-                    Helper.CreateTrainer(cd);
-                }
-                else if (input == 3)
-                {
-                    Helper.CreateStudent(cd);
-                }
-                else if (input == 4)
-                {
-                    Helper.CreateAssignment(cd);
+                    case 1:
+                        Helper.CreateCourse(cd);
+                        break;
+                    case 2:
+                        Helper.CreateTrainer(cd);
+                        break;
+                    case 3:
+                        Helper.CreateStudent(cd);
+                        break;
+                    case 4:
+                        Helper.CreateAssignment(cd);
+                        break;                
                 }
                 input = MenuDisplay();
             }
