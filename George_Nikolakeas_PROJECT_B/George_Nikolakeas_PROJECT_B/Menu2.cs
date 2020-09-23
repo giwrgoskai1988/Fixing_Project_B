@@ -38,130 +38,129 @@ namespace George_Nikolakeas_PROJECT_B
 
             while (input != 10)
             {
-                if (input == 1)
-                {
-                    foreach (Course c in courselist)
-                    {
-                        Console.WriteLine($"{c.CourseID} -- {c.Title} -- {c.Stream} -- {c.Type} -- {c.Start_date.ToString("yyyy/MM/dd")} --" +
-                            $" {c.End_date.ToString("yyyy/MM/dd")} ");
-                    }
-                }
-                if (input == 2)
-                {
-                    foreach (Trainer t in trainerlist)
-                    {
-                        Console.WriteLine($"{t.TrainerID} -- {t.FirstName} -- {t.LastName} -- {t.Subject}");
-                    }
-                }
-                if (input == 3)
-                {
-                    foreach (Student s in studentlist)
-                    {
-                        Console.WriteLine($"{s.StudentID} -- {s.FirstName} -- {s.LastName} -- {s.DateOfBirth.ToString("yyyy/MM/dd")} -- {s.TuitionFee}");
-                    }
-                }
-                if (input == 4)
-                {
-                    foreach (Assignment a in asslist)
-                    {
-                        Console.WriteLine($"{a.AssID} -- {a.Title} -- {a.Description} -- {a.SubDateTime.ToString("yyyy/MM/dd")} -- {a.OralMark} -- {a.TotalMark}");
-                    }
-                }
-                if (input == 5)
-                {
-                    foreach (Course c in courselist)
-                    {
-                        Console.WriteLine("\n\n");
-                        Console.WriteLine("---------------------COURSE------------------");
-                        Console.WriteLine($"{c.CourseID} -- {c.Title} -- {c.Stream} -- {c.Type} -- {c.Start_date.ToString("yyyy/MM/dd")} --" +
-                            $" {c.End_date.ToString("yyyy/MM/dd")} ");
 
-                        if (c.Trainers.Count > 0)
+                switch (input)
+                {
+                    case 1:
+                        foreach (Course c in courselist)
                         {
-                            Console.WriteLine("-------------------TRAINERS------------------");
-                            foreach (Trainer t in c.Trainers)
+                            Console.WriteLine($"{c.CourseID} -- {c.Title} -- {c.Stream} -- {c.Type} -- {c.Start_date.ToString("yyyy/MM/dd")} --" +
+                                $" {c.End_date.ToString("yyyy/MM/dd")} ");
+                        }
+                        break;
+                   
+                    case 2:
+                        foreach (Trainer t in trainerlist)
+                        {
+                            Console.WriteLine($"{t.TrainerID} -- {t.FirstName} -- {t.LastName} -- {t.Subject}");
+                        }
+                        break;
+                    
+                    case 3:
+                        foreach (Student s in studentlist)
+                        {
+                            Console.WriteLine($"{s.StudentID} -- {s.FirstName} -- {s.LastName} -- {s.DateOfBirth.ToString("yyyy/MM/dd")} -- {s.TuitionFee}");
+                        }
+                        break;
+                    
+                    case 4:
+                        foreach (Assignment a in asslist)
+                        {
+                            Console.WriteLine($"{a.AssID} -- {a.Title} -- {a.Description} -- {a.SubDateTime.ToString("yyyy/MM/dd")} -- {a.OralMark} -- {a.TotalMark}");
+                        }
+                        break;
+                   
+                    case 5:
+                        foreach (Course c in courselist)
+                        {
+                            if (c.Trainers.Count > 0)
                             {
-                                Console.WriteLine($"{t.TrainerID} -- {t.FirstName} -- {t.LastName} -- {t.Subject}");
+                                Console.WriteLine("\n\n");
+                                Console.WriteLine("---------------------COURSE------------------");
+                                Console.WriteLine($"{c.CourseID} -- {c.Title} -- {c.Stream} -- {c.Type} -- {c.Start_date.ToString("yyyy/MM/dd")} --" +
+                                    $" {c.End_date.ToString("yyyy/MM/dd")} ");
+                                Console.WriteLine("-------------------TRAINERS------------------");
+                                foreach (Trainer t in c.Trainers)
+                                {
+                                    Console.WriteLine($"{t.TrainerID} -- {t.FirstName} -- {t.LastName} -- {t.Subject}");
+                                }
                             }
                         }
-                        else
-                            Console.WriteLine("Course HAS NO TRAINERS!!!");
-                    }
-                }
-                if (input == 6)
-                {
-                    foreach (Course c in courselist)
-                    {
-                        Console.WriteLine("\n\n");
-                        Console.WriteLine("---------------------COURSE------------------");
-                        Console.WriteLine($"{c.CourseID} -- {c.Title} -- {c.Stream} -- {c.Type} -- {c.Start_date.ToString("yyyy/MM/dd")} --" +
-                               $" {c.End_date.ToString("yyyy/MM/dd")} ");
-
-                        if (c.Students.Count > 0)
-                        {
-                            foreach (Student s in c.Students)
+                        break;
+                    
+                    case 6:
+                        foreach (Course c in courselist)
+                        {                         
+                            if (c.Students.Count > 0)
                             {
-                                Console.WriteLine("-------------------STUDENTS------------------");
-                                Console.WriteLine($"{s.StudentID} -- {s.FirstName} -- {s.LastName} -- {s.DateOfBirth.ToString("yyyy/MM/dd")} -- {s.TuitionFee}");
+                                Console.WriteLine("\n\n");
+                                Console.WriteLine("---------------------COURSE------------------");
+                                Console.WriteLine($"{c.CourseID} -- {c.Title} -- {c.Stream} -- {c.Type} -- {c.Start_date.ToString("yyyy/MM/dd")} --" +
+                                       $" {c.End_date.ToString("yyyy/MM/dd")} ");
+                                foreach (Student s in c.Students)
+                                {
+                                    Console.WriteLine("-------------------STUDENTS------------------");
+                                    Console.WriteLine($"{s.StudentID} -- {s.FirstName} -- {s.LastName} -- {s.DateOfBirth.ToString("yyyy/MM/dd")} -- {s.TuitionFee}");
+                                }
                             }
                         }
-                        else
-                            Console.WriteLine("COURSE HAS NO STUDENTS!!!!");
-                    }
-                }
-                if (input == 7)
-                {
-                    foreach (Course c in courselist)
-                    {
-                        Console.WriteLine("\n\n");
-                        Console.WriteLine("---------------------COURSE------------------");
-                        Console.WriteLine($"{c.CourseID} -- {c.Title} -- {c.Stream} -- {c.Type} -- {c.Start_date.ToString("yyyy/MM/dd")} --" +
-                              $" {c.End_date.ToString("yyyy/MM/dd")} ");
-
-                        if (c.Assignments.Count > 0)
-                            foreach (Assignment a in c.Assignments)
-                            {
-                                Console.WriteLine("-------------------ASSIGNMENTS----------------");
-                                Console.WriteLine($"{a.AssID} -- {a.Title} -- {a.Description} -- {a.SubDateTime.ToString("yyyy/MM/dd")} -- {a.OralMark} -- {a.TotalMark}");
-                            }
-                        else
-                            Console.WriteLine("COURSE HAS NO ASSIGNMENTS!!!!");
-                    }
-                }
-                if (input == 8)
-                {
-                    foreach (Assignment a in asslist)
-                    {
-                        var crs = a.Courses.Distinct();
-                        Console.WriteLine("-------------------ASSIGNMENTS----------------");
-                        Console.WriteLine($"{a.AssID} -- {a.Title} -- {a.Description} -- {a.SubDateTime.ToString("yyyy/MM/dd")} -- {a.OralMark} -- {a.TotalMark}");
-                        Console.WriteLine("-------------------STUDENTS------------------");
-                        foreach (Course c in crs)
+                        break;
+                    
+                    case 7:
+                        foreach (Course c in courselist)
                         {
-                            foreach(Student s in c.Students)
+
+                            if (c.Assignments.Count > 0)
                             {
-                               
-                                Console.WriteLine($"{s.StudentID} -- {s.FirstName} -- {s.LastName} -- {s.DateOfBirth.ToString("yyyy/MM/dd")} -- {s.TuitionFee}");
+                                Console.WriteLine("\n\n");
+                                Console.WriteLine("---------------------COURSE------------------");
+                                Console.WriteLine($"{c.CourseID} -- {c.Title} -- {c.Stream} -- {c.Type} -- {c.Start_date.ToString("yyyy/MM/dd")} --" +
+                                      $" {c.End_date.ToString("yyyy/MM/dd")} ");
+
+                                foreach (Assignment a in c.Assignments)
+                                {
+                                    Console.WriteLine("-------------------ASSIGNMENTS----------------");
+                                    Console.WriteLine($"{a.AssID} -- {a.Title} -- {a.Description} -- {a.SubDateTime.ToString("yyyy/MM/dd")} -- {a.OralMark} -- {a.TotalMark}");
+                                }
                             }
-
                         }
-                    }
-                }
-
-                if (input == 9)
-                {
-                    Console.WriteLine("These Students belong to more than one Course!");
-                    foreach (Student s in studentlist)
-                    {
-                        if (s.Courses.Count > 1)
+                        break;
+                    
+                    case 8:
+                        foreach (Assignment a in asslist)
                         {
-                            Console.WriteLine($"{s.StudentID} -- {s.FirstName} -- {s.LastName} -- {s.DateOfBirth.ToString("yyyy/MM/dd")} -- {s.TuitionFee} " +
-                                $"-- Watches {s.Courses.Count} courses!");
+                            var crs = a.Courses.Distinct();
+                            Console.WriteLine("-------------------ASSIGNMENTS----------------");
+                            Console.WriteLine($"{a.AssID} -- {a.Title} -- {a.Description} -- {a.SubDateTime.ToString("yyyy/MM/dd")} -- {a.OralMark} -- {a.TotalMark}");
+                            Console.WriteLine("-------------------STUDENTS------------------");
+                            foreach (Course c in crs)
+                            {
+                                foreach (Student s in c.Students)
+                                {
+
+                                    Console.WriteLine($"{s.StudentID} -- {s.FirstName} -- {s.LastName} -- {s.DateOfBirth.ToString("yyyy/MM/dd")} -- {s.TuitionFee}");
+                                }
+
+                            }
                         }
-                    }
+                        break;
+                    
+                    case 9:
+                        Console.WriteLine("These Students belong to more than one Course!");
+                        foreach (Student s in studentlist)
+                        {
+                            if (s.Courses.Count > 1)
+                            {
+                                Console.WriteLine($"{s.StudentID} -- {s.FirstName} -- {s.LastName} -- {s.DateOfBirth.ToString("yyyy/MM/dd")} -- {s.TuitionFee} " +
+                                    $"-- Watches {s.Courses.Count} courses!");
+                            }
+                        }
+                        break;
+
                 }
                 input = Menu2.Display();
             }
+
         }
     }
 }
