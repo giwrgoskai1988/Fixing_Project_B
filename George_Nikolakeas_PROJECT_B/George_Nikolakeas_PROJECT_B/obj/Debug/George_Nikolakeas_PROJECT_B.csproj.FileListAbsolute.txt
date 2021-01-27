@@ -22,3 +22,15 @@ C:\Users\Toumpano\source\repos\MyGit\Fixing Project B\George_Nikolakeas_PROJECT_
 C:\Users\Toumpano\source\repos\MyGit\Fixing Project B\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.csproj.CopyComplete
 C:\Users\Toumpano\source\repos\MyGit\Fixing Project B\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.exe
 C:\Users\Toumpano\source\repos\MyGit\Fixing Project B\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.pdb
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\EntityFramework.xml
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\George_Nikolakeas_PROJECT_B.exe.config
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\George_Nikolakeas_PROJECT_B.exe
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\George_Nikolakeas_PROJECT_B.pdb
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\EntityFramework.dll
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.csproj.CoreCompileInputs.cache
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.csproj.CopyComplete
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.exe
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.pdb
+C:\Users\Α\source\repos\MyGit\ado\SchoolProjectADO\George_Nikolakeas_PROJECT_B\George_Nikolakeas_PROJECT_B\obj\Debug\George_Nikolakeas_PROJECT_B.csprojAssemblyReference.cache
